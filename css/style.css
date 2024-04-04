@@ -21,7 +21,7 @@
 */
 
 body {
-    background-color: #8c8c8c;
+    height: 2000px;
 }
 
 ul {
@@ -32,10 +32,16 @@ a {
     text-decoration: none;
 }
 
+.bg {
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+}
+
 /* HEADER */
 .header {
     max-width: 100%;
-    background-color: #696969;
     padding: 60px;
 }
 
@@ -76,7 +82,7 @@ a {
 
 /* INTRO */
 .intro {
-    height: 320px;
+    height: 340px;
     max-width: 100%;
 }
 
@@ -100,6 +106,10 @@ a {
 }
 
 @media (min-width: 375px) and (max-width: 890px) {
+    .bg {
+        background-image: url(../images/mobile/image-hero.jpg);
+    }
+
     .intro-container {
         margin: 50px auto;
         align-items: center;
@@ -114,7 +124,7 @@ a {
         padding: 24px 112px 24px 32px;
         text-transform: uppercase;
         line-height: 2.5rem;
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         max-width: 230px;
         margin: 0 auto;
     }
