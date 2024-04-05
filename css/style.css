@@ -12,18 +12,24 @@
 - Dark Gray: hsl(0, 0%, 55%)
 - Very Dark Gray: hsl(0, 0%, 41%)
 
-###FONTS###
-- Family: [Alata](https://fonts.google.com/specimen/Alata)
-- Weight: 400
-
-- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
-- Weight: 300
-
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
     height: 2000px;
-    background: rgb(193, 192, 192);
+}
+
+h1, h2, h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
 }
 
 ul {
@@ -31,16 +37,18 @@ ul {
 }
 
 a {
+    font-family: "Alata", sans-serif;
     text-decoration: none;
 }
 
-/* HEADER */ 
-
+/* MAIN CONTAINER - WEBSITE STRUCTURE */
 .main-container {
     max-width: 1440px;
     margin: 0 auto;
+    background-color: #fff;
 }
 
+/* HEADER */ 
 header {
     background: url(../images/desktop/image-hero.jpg) no-repeat center;
     background-size: cover;
@@ -62,7 +70,6 @@ header {
 .nav-bar ul {
     display: flex;
     gap: 32px;
-    font-weight: bold;
 }
 
 .intro h1 {
@@ -72,7 +79,6 @@ header {
     border: 2px solid #fff;
     font-size: 4.7em;
     color: #fff;
-    text-transform: uppercase;
 }
 
 #mobile-btn {
@@ -89,4 +95,37 @@ header {
         display: block;
     }
 }
+
+/* MAIN - ABOUT */
+.about {
+    position: relative;
+    padding: 0 165px;
+    margin-bottom: 180px;
+}
+
+.about .img-box img {
+    display: block;
+}
+
+.about .content-box {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    padding: 95px;
+    max-width: 640px;
+    background: #fff;
+}
+
+.about .content-box h2 {
+    font-size: 3.2em;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.about .content-box p {
+    color: darkgray;
+    line-height: 1.5;
+}
+
+/* MAIN - PRODUCTS */
 
