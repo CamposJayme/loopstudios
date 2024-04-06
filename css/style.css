@@ -128,4 +128,72 @@ header {
 }
 
 /* MAIN - PRODUCTS */
+.products {
+    position: relative;
+    padding: 0 165px;
+    margin-bottom: 180px;
+}
 
+.products h2 {
+    font-size: 3.2em;
+    margin-bottom: 80px;
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    place-content: center;
+    grid-gap: 30px;
+}
+
+.products-card {
+    position: relative;
+    height: 450px;
+    cursor: pointer;
+}
+
+.products-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.products-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, #000b);
+}
+
+.products-card:hover::after {
+    background: linear-gradient(180deg, #fffa 40%, #555a);
+}
+
+.products-card h3 {
+    position: absolute;
+    bottom: 35px;
+    left: 40px;
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 5;
+}
+
+.products-card:hover h3 {
+    color: #000;
+}
+
+.btn {
+    position: absolute;
+    top: 5px;
+    right: 165px;
+    padding: 8px 35px;
+    letter-spacing: 5px;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #000;
+}
