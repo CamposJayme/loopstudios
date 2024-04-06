@@ -197,3 +197,44 @@ header {
     color: #fff;
     background: #000;
 }
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    padding: 60px 165px;
+}
+
+.footer-container {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social ul {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+.footer-nav a {
+    color: #fff;
+}
+
+.footer-nav p {
+    color: gray;
+}
