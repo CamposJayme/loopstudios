@@ -86,16 +86,6 @@ header {
     color: #fff;
 }
 
-@media (max-width: 960px) {
-    .navbar-nav ul {
-        display: none;
-    }
-
-    #mobile-btn {
-        display: block;
-    }
-}
-
 /* MAIN - ABOUT */
 .about {
     position: relative;
