@@ -1,0 +1,145 @@
+/*====== MEDIA QUERIES PARA MAIORES DISPOSITIVOS DESKTOP ======*/
+
+@media screen and (max-width: 1200px) {
+    /* SECTION ABOUT */
+
+    .about .img-box {
+        margin-bottom: 80px;
+    }
+
+    .about .img-box img {
+        width: 100%;
+    }
+
+    .about .content-box {
+        position: static;
+        max-width: 100%;
+        text-align: center;
+        padding: 0 95px;
+    }
+
+    /* FOOTER */ 
+    .social {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 28px;
+    }
+}
+
+/*====== MEDIA QUERIES PARA TABLETS MAIORES ======*/
+@media (min-width: 769px) and (max-width: 992px) {
+    /* HEADER */
+    header {
+        padding: 65px 40px ;
+        margin-bottom: 120px;
+    }
+
+    /* INTRO */
+    .intro h1 {
+        padding: 22px;
+        font-size: 4em;
+    }
+
+    /* SECTION ABOUT */
+    .about {
+        padding: 0 40px;
+        margin-bottom: 120px;
+    }
+
+    .about .content-box {
+        padding: 0px 0px;
+    }
+
+    .about .content-box h2 {
+        font-size: 2.8em;
+    }
+
+    .products h2 {
+        font-size: 2.8em;        
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    /* HEADER */
+    .navbar-nav ul {
+        display: none;
+    }
+
+    #mobile-btn {
+        display: block;
+    }
+
+    /* SECTION PRODUCTS */
+    .products h2 {
+        text-align: center;
+    }
+
+    .products .btn {
+        display: block;
+        position: static;
+        width: max-content;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    /* FOOTER */ 
+    .social {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 28px;
+    }
+}
+
+/*====== MEDIA QUERIES PARA TABLETS ======*/
+
+@media (min-width: 576px) and (max-width: 768px) {
+    /* HEADER */
+    header {
+        padding: 65px 40px ;
+        margin-bottom: 120px;
+    }
+
+    /* INTRO */
+    .intro h1 {
+        padding: 22px;
+        font-size: 3.5em;
+    }
+
+    /* SECTION ABOUT */
+    .about {
+        padding: 0 40px;
+        margin-bottom: 120px;
+    }
+
+    .about .content-box {
+        padding: 0px 0px;
+    }
+
+    .about .content-box h2 {
+        font-size: 2.5em;
+    }
+
+    .products h2 {
+        font-size: 2.5em;        
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 55px 40px;
+    }
+}
+
+/*====== MEDIA QUERIES PARA TABLETS ======*/
+
+@media screen and (max-width: 576px) {
+    
+}
