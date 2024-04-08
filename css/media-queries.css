@@ -99,12 +99,12 @@
     }
 }
 
-/*====== MEDIA QUERIES PARA TABLETS ======*/
+/*====== MEDIA QUERIES PARA DISPOSITIVOS MENORS E TABLETS ======*/
 
 @media (min-width: 576px) and (max-width: 768px) {
     /* HEADER */
     header {
-        padding: 65px 40px ;
+        padding: 65px 40px;
         margin-bottom: 120px;
     }
 
@@ -128,6 +128,10 @@
         font-size: 2.5em;
     }
 
+    .products {
+        padding: 0 40px;
+    }
+
     .products h2 {
         font-size: 2.5em;        
     }
@@ -138,8 +142,55 @@
     }
 }
 
-/*====== MEDIA QUERIES PARA TABLETS ======*/
+/*====== MEDIA QUERIES PARA MOBILE (CELULAR) ======*/
 
 @media screen and (max-width: 576px) {
-    
+    header {
+        padding: 30px 20px;
+        margin-bottom: 120px;
+    }
+
+    .intro h1 {
+        font-size: 2.6em;
+        padding: 20px;
+    }
+
+    .about {
+        padding: 0 20px;
+        margin-bottom: 110px;
+    }
+
+    .about .content-box {
+        padding: 0 0px;
+    }
+
+    .about .content-box h2 {
+        font-size: 2.3em;
+    }
+
+    .about .img-box {
+        margin-bottom: 50px;
+    }
+
+    .products {
+        padding: 0 40px;
+        margin-bottom: 120px;
+    }
+
+    .products h2 {
+        font-size: 2.3em;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    .footer-nav ul {
+        display: block;
+    }
+
+    .footer-nav ul li {
+        margin-bottom: 24px;
+    }
 }
