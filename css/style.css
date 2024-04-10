@@ -83,7 +83,7 @@ header {
 
 #mobile-btn {
     display: none;
-    color: #fff;
+    cursor: pointer;
 }
 
 /* MAIN - ABOUT */
