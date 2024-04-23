@@ -72,6 +72,19 @@ header {
     gap: 32px;
 }
 
+.navbar-nav ul li::after {
+    content: '';
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    display: block;
+}
+
+.nav-bar ul li:hover::after {
+    width: 100%;
+    transition: .5s;
+}
+
 .intro h1 {
     max-width: 650px;
     padding: 38px;
@@ -219,6 +232,20 @@ footer {
 .footer-nav ul {
     display: flex;
     gap: 32px;
+}
+
+.footer-nav ul li::after {
+    content: '';
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    display: block;
+    transition: .5s;
+}
+
+.footer-nav ul li:hover::after {
+    width: 100%;
+    transition: .5s;
 }
 
 .footer-nav a {
