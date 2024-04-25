@@ -65,15 +65,6 @@
 
 
 @media screen and (max-width: 992px) {
-    /* HEADER */
-    .navbar-nav ul {
-        display: none;
-    }
-
-    #mobile-btn {
-        display: block;
-    }
-
     /* SECTION PRODUCTS */
     .products h2 {
         text-align: center;
@@ -198,5 +189,16 @@
 
     .footer-nav ul li {
         margin-bottom: 24px;
+    }
+}
+
+/*MENU*/
+@media (max-width: 768px) {
+    .navbar-nav ul {
+        display: none;
+    }
+    
+    #mobile-btn {
+        display: block;
     }
 }
