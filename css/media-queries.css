@@ -197,20 +197,24 @@
     #mobile-btn {
         display: block;
     }
-    
+
     .navbar-nav ul {
         background-color: #000;
-        display: none;
+        display: block;
         position: absolute;
-        top: 100px;
-        left: 0;
         width: 100%;
-        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0px;
+        transition: .6s;
         z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
     }
 
     .navbar-nav.active ul {
-        display: block;
+        height: calc(100vh - 100px);
+        visibility: visible;
     }
 
     .navbar-nav.active ul li {
