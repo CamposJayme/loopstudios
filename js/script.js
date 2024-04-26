@@ -8,7 +8,7 @@ function toggleMenu() {
     if (nav.classList.contains('active')) {
         header.style.background = 'black';
     } else {
-        header.style.background = "url('file:///C:/Users/irene/OneDrive/%C3%81rea%20de%20Trabalho/loopstudios/images/desktop/image-hero.jpg') no-repeat center";
+        header.style.background = "url('./images/desktop/image-hero.jpg') no-repeat center";
     }
 }
 
