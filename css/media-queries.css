@@ -194,11 +194,36 @@
 
 /*MENU*/
 @media (max-width: 768px) {
-    .navbar-nav ul {
-        display: none;
-    }
-    
     #mobile-btn {
         display: block;
     }
+    
+    .navbar-nav ul {
+        background-color: #000;
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 100px);
+        z-index: 1000;
+    }
+
+    .navbar-nav.active ul {
+        display: block;
+    }
+
+    .navbar-nav.active ul li {
+        padding: 1rem;
+    }   
+
+    .navbar-nav.active a {
+        padding: 1rem 0;
+        margin: 0 2rem;
+    }
+
+    .navbar-nav ul li::after {
+        content: none;
+    }
+    
 }
