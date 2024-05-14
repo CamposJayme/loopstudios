@@ -255,3 +255,14 @@ footer {
 .footer-nav p {
     color: gray;
 }
+
+.js-anime {
+    opacity: 0;
+    transform: translate3d(0px, -50px, 0px);
+}
+
+.js-animeOn {
+    opacity: 1;
+    transition: .3s all ease;
+    transform: translate3d(0px, 0px, 0px);
+}
